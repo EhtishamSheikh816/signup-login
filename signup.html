@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Create account</h1>
+      <form>
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <div class="password-wrapper">
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <button type="submit" onclick="signUp()">Create account</button>
+      </form>
+      <p class="login-text">
+        Already have an account? <a href="login.html">Login</a>
+      </p>
+      <div class="or">— Or continue with —</div>
+      <div class="socials">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/300/300221.png"
+          alt="Google"
+        />
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/0/747.png"
+          alt="Apple"
+        />
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+          alt="Facebook"
+        />
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

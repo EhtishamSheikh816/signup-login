@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <aside class="sidebar">
+        <h2 id="usr"></h2>
+        <ul>
+          <li>Dashboard</li>
+          <li>Users</li>
+          <li>Reports</li>
+          <li>Settings</li>
+        </ul>
+      </aside>
+
+      <div class="main">
+        <header class="header">
+          <h1>Admin Dashboard</h1>
+          <div class="profile">
+            👤 Admin
+            <button class="logout-btn" onclick="logOut()">Logout</button>
+          </div>
+        </header>
+        <section class="cards">
+          <div class="card">
+            <h3>Users</h3>
+            <p>1,245</p>
+          </div>
+          <div class="card">
+            <h3>Sales</h3>
+            <p>$34,000</p>
+          </div>
+          <div class="card">
+            <h3>Visits</h3>
+            <p>12,875</p>
+          </div>
+          <div class="card">
+            <h3>Feedback</h3>
+            <p>320</p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
